@@ -1,0 +1,19 @@
+/*
+    - Query params => meusite.com/users?nome=johnatan&age=34 // Filtros
+        app.get('/users', (request, response) => {
+        const { name, age } = request.query // Destructuring Assignment
+        return response.json({ name, age })
+})
+    - Route params => /users/2  // Buscar, deletar ou atualizar algo específico
+    app.get('/users/:id', (request, response) => {
+    const {id} = request.params
+    console.log(id)
+    return response.json({id})
+})
+
+   - Resquest body => {"name":"Johnatan":"age:"}
+
+
+   - Middleware => INTERCEPTADOR => tem o poder de parar ou alterar dados da requisição
+
+*/
